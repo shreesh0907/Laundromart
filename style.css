@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body1{
+  display: flex;
+  background-color: rgb(244, 238, 238);
+}
+ul{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+}
+
+.nav>a{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-decoration: none;
+  color: darkolivegreen;
+}
+
+nav{
+  gap: 30rem;
+  display: flex;;
+}
+
+.Username{
+  margin: auto;
+  padding: 15px;
+  color: blue;
+  border: 2px solid blue;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 10px;
+  background-color: lightcyan;
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  justify-content:space-evenly;
+  display: flex;
+  align-items: center;
+  height: 40rem;
+  background-color: white;}
+
+.left{
+  font-size: x-large;
+}
+.left .black{
+  text-align: justify;
+  color: rgb(66, 61, 61)
+}
+.left .blue{
+  text-align: justify;
+  color: rgb(115, 184, 207);
+}
+
+.right
+  img{
+    width: 30rem;
+    height: 30rem;
+    border: 2px solid black;
+}
+p{
+  color: gray;
+  font-size: large;
+}
+
+button{
+  width: 20rem;
+  height: 4rem;
+  border: 2px solid darkolivegreen;
+  border-radius: 10px;
+  background-color: lightcyan;
+  font-size: large;
+  color: blue;
+}
+button:hover{
+  background-color: green;
+  color: rgb(205, 231, 36);
+}
