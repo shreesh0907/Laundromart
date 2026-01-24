@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Intro</title>
+    <link rel = "shortcut icon" href = "favicon.ico" type = "image/x-icon" >
+</head>
+<body>
+<section class="headers">
+        <nav>
+        <img class="img" src="images/favicon.ico" alt="Laundromat Logo" width="50">
+        <ul class="nav-links" type="none">
+            <li class="nav"><a href="#home">Home</a></li>
+            <li class="nav"><a href="#services">Services</a></li>
+            <li class="nav"><a href="#abtus">About Us</a></li>
+            <li class="nav"><a href="#contactus">Contact Us</a></li>
+        </ul>
+        <p class="Username">
+            <b>Username</b>
+        </p>
+    </nav>
+</section>
+<section id="home" class="main">
+    <div class="left">
+        <h1 class="black"> Revitalize Your <br> Clothes with Expert </h1>
+        <h1 class="blue">Laundry Services!</h1>
+        <p> From Premium Dry Cleaning to swift wash and fold, we <br>deliver care and convenience. Schedule a pickup and <br>rediscover the freshness of your clothes today!</p>
+    <br>
+    <button onclick="window.location.href='#services'">Book a Service Today!🚀 </button></div>
+    <div class="right">
+        <img src="images/washer.png" alt="Laundry Image">
+    </div>
+</section>
+<section class="achievements">
+    <h3> Our Achievements </h3>
+    <p><b>15+</b><br>Laundry Services</p>
+    <p><b>240+</b><br>Happy Customers</p>
+    <p><b>2+ Yrs</b><br>Experience</p>
+</section>
+
+<section id="services" class="services">
+  <div class="services-box">
+    <h3>Our Services</h3>
+    <p>Click on the Add to Cart button to add the services to your cart</p>
+
+    <div class="leftsrv">
+      <span class="text">Dry Cleaning</span>
+      <span class="price">₹200.00</span>
+      <button id="dry">Add Item ➕</button>
+    </div> 
+
+    <div class="leftsrv">
+      <span class="text">Wash and Fold</span>
+      <span class="price">₹100.00</span>
+      <button id="wash">Add Item ➕</button>
+    </div>
+
+    <div class="leftsrv">
+      <span class="text">Ironing</span>
+      <span class="price">₹30.00</span>
+      <button id="iron">Add Item ➕</button>
+    </div>
+
+    <div class="leftsrv">
+      <span class="text">Stain Removal</span>
+      <span class="price">₹500.00</span>
+      <button id="stain">Add Item ➕</button>
+    </div>
+
+    <div class="leftsrv">
+      <span class="text">Leather and Suede Cleaning</span>
+      <span class="price">₹999.00</span>
+      <button id="leather">Add Item ➕</button>
+    </div>
+
+    <div class="leftsrv">
+      <span class="text">Wedding Dress Cleaning</span>
+      <span class="price">₹2800.00</span>
+      <button id="wedding">Add Item ➕</button>
+    </div>
+    <hr color=lightcyan>
+    <p>ℹ️ Add the items to the cart and book now</p>
+    </div>
+    <div class="booking">
+        <div class="added">
+             <h3> Added Items </h3><br>
+            <table id="added">
+                <tr>
+                <th>SNo</th>
+                <th>Service Name</th>
+                <th>Price</th>
+                </tr>
+            </table>
+            <section id="emptyMsg">
+            <img src="images/info.png" width="60px">
+            <h3>No Items in Cart</h3>
+            <p>Your cart is empty. Please add services to your cart from the Services section.</p>
+            </section>
+            <br><hr>
+            <h3>Total Amount: ₹<span id="total">0</span></h3>
+        </div><hr color=gainsboro><hr color=gainsboro>
+        <div class="book">
+        <h3 id="book-now"> Book Now: </h3><br>
+        <form id="bookForm">
+        Name: <input type="text" name="to_name" required><br><br>
+        Email: <input type="email" name="to_email" required><br><br>
+        Phone: <input type="tel" name="phone" minlength="10" maxlength="10" required><br><br>
+        <input type="submit" id="submitBtn" value="Book Now">
+        </form>
+        <p id="sendingMsg" style="display:none; color:#555; margin-top:10px;">
+        Sending confirmation email...
+        </p>
+        <p id="successmsg">
+        Thank you for booking the service. We will get back to you soon!</p>
+        </div>
+        <p id="errorMsg" style="display:none; color:red; font-weight:600; margin-top:10px;">
+        Couldn't send email right now. Please try again.
+        </p>
+    </div>
+</section>
+<section class="quality">
+    <div class="premiumserv">
+        <img src="images/laundry.png" width="150px" alt="Laundry Image">
+        <p>Elevate your wardrobe with our services.
+            We use premium cleaning methods to keep your clothes fresh, spotless, and long-lasting.</p>
+    </div>
+    <div class="quicksupport">
+        <img src="images/support.png" width="150px" alt="Support Image">
+        <p>Our dedicated support team is here to assist you 24/7.
+            Whether you have questions about our services or need help with your order, we're just a call or click away.</p>
+    </div>
+    <div class="hasslefreedelivery">
+        <img src="images/delivery.png" width="150px" alt="Delivery Image">
+        <p>Enjoy the convenience of our hassle-free pickup and delivery service.
+            Schedule a time that works for you, and we'll take care of the rest, ensuring your laundry is returned fresh and on time.</p>
+    </div>
+    <div class="affordableprice">
+        <img src="images/price.png" width="130px" alt="Price Image">
+        <p>Our services are competitively priced, offering exceptional value for money.
+            We believe quality laundry should be accessible to everyone, without compromising on standards.</p>
+    </div>
+</section>
+<section class="newsletter">
+    <div class="heading">
+        <h3> Subscribe To Our Newsletter</h3>
+    </div>
+    <div class="form">
+        <p>Stay Updated with Our Latest Offers and News! Enter your name and email address below:</p>
+        <form>
+            Name: <input type="text" placeholder="Enter your Full Name" required>
+            Email: <input type="email" placeholder="Enter your Email Address" required>
+            <input type="submit" value="Subscribe"> 
+        </form>
+    </div>
+</section>
+<section class="footer">
+    <div id="abtus" class="abtus">
+        <h3> About Us </h3>
+        <img src="images/favicon.ico" width="100px">
+        <p> We provide reliable laundry services with a focus on quality, convenience, and care.
+        From pickup to delivery, we make sure your clothes are handled like our own.</p>
+    </div>
+    <div class="importantlinks">
+        <h3> Important Links </h3>
+        <ul type="none">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#abtus">About Us</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+        </ul>
+    </div>
+    <div id="contactus" class="contactus">
+        <h3> Contact Us </h3>
+        <p>laundroM.gmail.com</p>
+        <p>+91 9876543210</p>
+    </div>    
+    <div class="socialmedia">
+        <h3> Follow Us On </h3>
+        <a href=""><img src="images/fb.png" width="30px"></a>
+        <a href=""><img src="images/insta.png" width="30px"></a>
+        <a href=""><img src="images/twitter.png" width="30px"></a>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init("9GwuP4V3y_rWggxcX");
+</script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+/*== RESET ==*/ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*== HEADER / NAV ==*/ 
+.headers{
+  display: flex;
+  background-color: rgb(244, 238, 238);
+}
+
+nav{
+  gap: 30rem;
+  display: flex;;
+  align-items: center;
+  top:0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+}
+
+.nav>a{
+  text-decoration: none;
+  color: darkolivegreen;
+}
+
+.Username{
+  padding: 0.3rem;
+  color: blue;
+  border: 2px solid darkolivegreen;
+  border-radius: 10px;
+  background-color: lightcyan;
+  font-size: 1.2rem;
+}
+
+/*== ACHIEVEMENTS ==*/ 
+
+.achievements{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(46, 163, 240);
+  height: 11rem;
+  font-size: large;
+  border: 2px solid black;
+}
+
+.achievements h3{
+  font-size: 2rem;
+}
+.achievements p b{
+  color: black;
+  font-size: 1.5rem;
+}
+.achievements p{
+  color: rgb(70, 68, 68);
+}
+
+/*== SERVICES ==*/ 
+
+.services{
+  display: flex;
+  background-color: gainsboro;
+  line-height: 1.5rem;
+  padding: 20px;
+  height: 45rem;
+}
+
+.services-box, .added, .book{
+  border: 2px solid darkolivegreen;
+  border-radius: 10px;
+  background-color: lightcyan;
+  padding: 20px;
+  font-size: large;
+  text-align: center;
+}
+
+.leftsrv {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  gap:1.5rem;
+  margin: 15px 0;
+  border: 2px solid darkolivegreen;
+  border-radius: 10px;
+}
+
+.leftsrv button:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.price {
+  color: #052e3a;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text{
+  text-align: left;
+  color: rgb(75, 74, 74);
+  font-weight: bold;
+}
+
+.services button {
+  width: 10rem;
+  height: 2.2rem;
+  border: 2px solid darkolivegreen;
+  border-radius: 10px;
+  background-color: rgb(165, 196, 227);
+  color: rgb(75, 74, 74);
+  font-size: medium;
+  font-weight: bold;
+}
+
+table th{
+  padding: 10px 20px;
+  font-size: large;
+  color: rgba(5, 43, 94, 0.886);
+  background-color:rgb(165, 196, 227);
+  text-align: center;
+}
+#emptyMsg{
+  text-align: center;
+  color: gray;
+  font-size: large;}
+
+#successmsg{
+  display:none; 
+  color: green; 
+  font-weight: 600; 
+  margin-top: 10px;
+}
+
+input{
+  border: 2px solid blue;
+  padding: 4px;
+  font-size: 1.1rem;
+  border-radius: 5%;
+}
+
+input[type="submit"]{
+  cursor: pointer;
+  border: 2px solid rgb(18, 18, 166);
+  padding: 6px 12px;
+  font-size: 1.1rem;
+  border-radius: 5%;
+  background-color: lightblue;
+}
+
+/* == LISTS ==*/ 
+
+ul{ 
+  gap: 25px;
+  font-size: larger;
+}
+
+ul li {
+    white-space: nowrap; 
+}
+
+ul li a{
+  text-decoration: none;
+  color: lightcyan
+}
+
+ul li:hover a{
+  font-weight: 500;
+  text-decoration: underline;
+  color: rgb(68, 136, 173);
+}
+
+/* == MAIN CONTENT ==*/ 
+.main{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  height: 30rem;
+  background-color: gainsboro;}
+
+.left{
+  font-size: x-large;
+}
+.left .black{
+  text-align: justify;
+  color: rgb(66, 61, 61)
+}
+.left .blue{
+  text-align: justify;
+  color: rgb(10, 121, 158);
+}
+
+.right img{
+    width: 20rem;
+    height: 20rem;
+    border: 2px solid gainsboro
+}
+p{
+  color: gray;
+  font-size: large;
+  line-height: 2rem;
+}
+
+/*== BUTTONS */
+.main button{
+  width: 15rem;
+  height: 3rem;
+  border: 2px solid darkolivegreen;
+  border-radius: 10px;
+  background-color: lightcyan;
+  font-size: large;
+  color: blue;
+}
+button:hover{
+  background-color: lightblue;
+  color: black;
+}
+
+/* == RESPONSIVE NAVBAR ==*/
+@media (max-width: 958px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Username {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*== QUALITY/NEWSLETTER/FOOTER ==*/ 
+
+.quality{
+  display: flex;
+  background-color: rgb(246, 229, 229);
+  border: 1px solid black;
+}
+
+.newsletter{
+  display: flex;
+  background-color: rgb(91, 149, 236);
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  height: 7rem;
+}
+
+.heading{
+  font-size: x-large;
+  font-weight: bold;
+  color: rgb(62, 23, 23);
+  margin-bottom: 10px;
+}
+
+.newsletter p{
+  color: rgb(53, 10, 10);
+  font-size: large;
+}
+
+.footer{
+  display:flex;
+  padding: 20px;
+  background-color: #052e3a;
+  justify-content: space-around;
+  color: white;
+  gap: 15em;
+} 
